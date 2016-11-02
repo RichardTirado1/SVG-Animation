@@ -36,6 +36,11 @@
     </circle>
 
     <circle cx="120" cy="50" r="75" fill="#a3a3ff"/>
+
+    <polygon points="400,10 340,198 490,78 310,78 460,198" fill="white">
+    <animate id="bigstar" attributeName="points" from="400,10 340,198 490,78 310,78 460,198" to="400,70 360,220 470,88 340,80 440,200" dur="3s" begin="click; littlestar.end"/>
+    <animate id="littlestar" attributeName="points" from="400,70 360,220 470,88 340,80 440,200" to="400,10 340,198 490,78 310,78 460,198" dur="3s" begin="bigstar.end"/>
+    </polygon>
     <!--All above is the moon-->
 
     <!--All below is the island-->
@@ -43,8 +48,9 @@
 
     <rect x="910" y="110" width="20" height="200" fill="#994d00"/>
 
-    <polygon points="950 50 750 200 750 100" fill="lightgreen"/>  
+    <polygon points="920 110 790 260 770 160" fill="lightgreen"/>
 
+    <polygon points="920 110 990 240 970 160" fill="lightgreen"/>
 
   </svg>
   </body>
