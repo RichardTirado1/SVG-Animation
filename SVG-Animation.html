@@ -7,7 +7,7 @@
   <body>
   <svg width="100%" viewBox="0 0 1000 460" >
     <rect x="0" y="0" width="1000" height="460" fill="#a3a3ff">
-   <animate attributeName="fill" from="#a3a3ff" to="blue" dur="5s" begin="click">
+   <animate id="skychange" attributeName="fill" from="#a3a3ff" to="blue" dur="5s" begin="click">
     </rect>
 
     <text x="345" y="30" font-family="Coiny" font-size="40" fill="white">Explorers!</text>
@@ -56,7 +56,9 @@
     <animate attributeName="opacity" from="1" to="0" dur="3s" repeatCount="indefinite"/>
     </circle>
 
-    <circle cx="120" cy="50" r="75" fill="#a3a3ff"/>
+    <circle cx="120" cy="50" r="75" fill="#a3a3ff">
+    <animate attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite" begin="skychange.end"/>
+    </circle>
 
     <polygon points="510,10 450,198 600,78 420,78 570,198" fill="white">
     <animate id="bigstar" attributeName="points" from="420,10 360,198 510,78 330,78 480,198" to="500,70 460,130 550,50 440,40 540,140" dur="3s" begin="click; littlestar.end"/>
