@@ -20,6 +20,14 @@
     <animate id="2ndrect" attributeName="x" from="250" to="450" dur="1s" begin="firstrect.end">
     </rect>
 
+    <rect x="300" y="350" width="150" height="130" fill="#4676c4">
+    <animate id="4threct" attributeName="x" from="650" to="850" dur="1s" begin="3rdrect.end">
+    </rect>
+
+    <rect x="150" y="350" width="150" height="130" fill="#4676c4">
+    <animate id="3rdrect" attributeName="x" from="450" to="650" dur="1s" begin="0s; 4threct.end">
+    </rect>
+
     <rect x="450" y="350" width="150" height="130" fill="#4676c4">
     <animate id="3rdrect" attributeName="x" from="450" to="650" dur="1s" begin="0s; 4threct.end">
     </rect>
@@ -28,9 +36,19 @@
     <animate id="4threct" attributeName="x" from="650" to="850" dur="1s" begin="3rdrect.end">
     </rect>
 
+    <rect x="750" y="350" width="150" height="130" fill="#4676c4">
+    <animate attributeName="x" from="850" to="300" dur="1s" repeatCount="20" begin="4threct">
+    </rect>
+
     <rect x="850" y="350" width="150" height="130" fill="#4676c4">
     <animate attributeName="x" from="850" to="300" dur="1s" repeatCount="20" begin="4threct">
     </rect>
+
+    <rect x="400" y="350" width="150" height="130" fill="#4676c4">
+    <animate attributeName="x" from="850" to="300" dur="1s" repeatCount="20" begin="4threct">
+    </rect>
+
+     <polyline points="20 350 250 350 450 350 650 350 850 350" stroke="#4676c4" stroke-width="15"/>
     <!--All above is the sea moving-->
 
     <!--All below is the moon-->
